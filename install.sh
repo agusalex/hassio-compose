@@ -1,5 +1,5 @@
 sudo apt update -y;
-sudo apt-get install -y libffi-dev libssl-dev python3 python3-pip;
+sudo apt-get install -y libffi-dev libssl-dev python3 python3-pip git;
 curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh;
 sudo usermod -a -G docker ${USER};
 sudo su - ${USER};
