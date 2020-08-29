@@ -10,7 +10,7 @@ limitations however, make sure to read about them below.
 
 Nothing is perfect, so here are few general things you need to know:
 
-* Currently only for x86_64 hosts (based on `qemux86-64-homeassistant`)
+* Currently only for Raspberry Pi3
 * AppArmor not supported (maybe later)
 * You will get an error regarding *rauc* during startup ([you can ignore it](https://github.com/home-assistant/hassio/issues/560))
 * Since HassOS is not used, upgrade of OS is not supported (related to point above)
