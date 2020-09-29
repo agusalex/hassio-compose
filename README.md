@@ -109,14 +109,14 @@ hassio_supervisor | 19-05-02 14:29:17 INFO (MainThread) [hassio.core] Hass.io is
 To stop the supervisor, just run:
 
 ```shell
-$ docker-compose down
+ docker-compose down
 ```
 
 This will not stop Home Assistant or any addons. To do that, run:
 
 ```shell
-$ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker stop
-$ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker stop
+ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker stop
+ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker stop
 ```
 
 ### Removing Containers
@@ -124,7 +124,7 @@ $ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker stop
 To remove the containers (stop them first), just do:
 
 ```shell
-$ docker-compose rm
-$ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker rm
-$ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker rm
+ docker-compose rm
+ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker rm
+ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker rm
 ```
