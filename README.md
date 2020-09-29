@@ -115,8 +115,8 @@ $ docker-compose down
 This will not stop Home Assistant or any addons. To do that, run:
 
 ```shell
-$ docker stop homeassistant
-$ docker ps | grep " addon_" | cut -f 1 -d ' ' | xargs docker stop
+$ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker stop
+$ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker stop
 ```
 
 ### Removing Containers
@@ -125,5 +125,6 @@ To remove the containers (stop them first), just do:
 
 ```shell
 $ docker-compose rm
-$ docker ps | grep " addon_" | cut -f 1 -d ' ' | xargs docker rm
+$ docker ps | grep "homeassistant" | cut -f 1 -d ' ' | xargs docker rm
+$ docker ps | grep "hassio" | cut -f 1 -d ' ' | xargs docker rm
 ```
