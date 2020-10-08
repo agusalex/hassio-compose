@@ -36,26 +36,9 @@ Other things, like installing addons, upgrading Home Assistant and dealing with
 snapshots works correctly though :blush:
 
 ## Installation
-0. Fix Locale `sudo perl -pi -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen`
+1. `sudo curl -fsSL https://raw.githubusercontent.com/agusalex/hassio-compose/master/install.sh -o install.sh && sh install.sh`
 
-1. Install `docker-compose` according to your operating system, e.g. `apt-get` or
-`pip install docker-compose` in a virtual environment.
-
-2. Clone this repository:
-
-```shell
-$ git clone https://github.com/postlund/hassio-compose.git
-```
-
-3. Create a `.env` file with `SUPERVISOR_SHARE` pointing to the directory where
-you want to store all configuration data. __THIS MUST BE AN ABSOLUTE PATH!!!!__
-
-```shell
-$ cd hassio-compose
-$ echo "SUPERVISOR_SHARE=/home/$USER/hassio-config" > .env
-```
-
-4. Start Hass.io using `docker-compose`:
+2. Hass.io Will start on its own:
 
 ```shell
 $ docker-compose up
