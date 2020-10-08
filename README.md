@@ -36,6 +36,7 @@ Other things, like installing addons, upgrading Home Assistant and dealing with
 snapshots works correctly though :blush:
 
 ## Installation
+0. Fix Locale `sudo perl -pi -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen`
 
 1. Install `docker-compose` according to your operating system, e.g. `apt-get` or
 `pip install docker-compose` in a virtual environment.
